@@ -142,6 +142,42 @@
         .item h4 + p {
             margin-top: 2px;
         }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            body {
+                padding: 0;
+            }
+            .container {
+                flex-direction: column;
+                min-height: auto;
+                margin: 0;
+                box-shadow: none;
+            }
+            .sidebar, .main-content {
+                width: 100%;
+            }
+            .sidebar {
+                padding: 20px;
+            }
+            .main-content {
+                padding: 20px;
+            }
+            .lang-switch {
+                top: 10px;
+                right: 10px;
+            }
+            .profile h1 {
+                font-size: 2em;
+            }
+            .date {
+                float: none;
+                display: block;
+                text-align: left;
+                margin-top: 5px;
+                font-style: normal;
+            }
+        }
     </style>
 </head>
 <body>
